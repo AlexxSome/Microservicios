@@ -15,6 +15,7 @@ public class ItemController {
 
     @Autowired
     @Qualifier("itemFeign")
+//    @Qualifier("serviceRestTemplate")
     private ItemService itemService;
 
     @GetMapping("/listar")
