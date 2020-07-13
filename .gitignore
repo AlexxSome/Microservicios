@@ -23,3 +23,6 @@
 hs_err_pid*
 springboot-servicio-productos\.mvn\*
 springboot-servicio-item\.mvn\*
+*.jar
+springboot-servicio-eureka-server/.mvn/wrapper/maven-wrapper.jar
+springboot-servicio-eureka-server/.mvn/wrapper/maven-wrapper.properties
