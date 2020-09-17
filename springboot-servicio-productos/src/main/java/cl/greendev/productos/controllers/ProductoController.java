@@ -33,9 +33,14 @@ public class ProductoController {
     }
 
     @GetMapping("/ver/{id}")
-    public Producto detalle(@PathVariable Long id){
+    public Producto detalle(@PathVariable Long id) throws Exception {
         Producto prod = productoService.findById(id);
         prod.setPort(port);
+        boolean ok = false;
+        if(ok == false){
+            throw new Exception("No se puede cargar el PROD");
+        }
+
         return prod;
     }
 }
